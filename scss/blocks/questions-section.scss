@@ -1,0 +1,18 @@
+/* =================================== */
+/*  Questions section block
+/* =================================== */
+
+.questions-section-container {
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.16);
+    padding: 2rem;
+
+    a {
+        text-decoration: underline;
+        font-weight: 500;
+        color: inherit;
+    }
+
+    p {
+        margin-top: 2.5rem;
+    }
+}

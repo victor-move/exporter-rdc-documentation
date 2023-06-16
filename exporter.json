@@ -815,7 +815,7 @@
       {
         "key": "io.rdc.documentation-main.questions-section",
         "category": "Component",
-        "title": "Questions section [WIP]",
+        "title": "Questions section",
         "description": "Add the questions section",
         "mode": "block",
         "properties": []

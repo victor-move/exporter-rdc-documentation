@@ -814,7 +814,7 @@
       },
       {
         "key": "io.rdc.documentation-main.questions-section",
-        "category": "Component",
+        "category": "Component Blocks",
         "title": "Questions section",
         "description": "Add the questions section",
         "icon": "icons/icon-circle-question.png",

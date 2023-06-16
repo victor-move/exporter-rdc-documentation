@@ -817,6 +817,7 @@
         "category": "Component",
         "title": "Questions section",
         "description": "Add the questions section",
+        "icon": "icons/icon-circle-question.png",
         "mode": "block",
         "properties": []
       }

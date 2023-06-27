@@ -782,8 +782,8 @@
         "properties": [
           {
             "key": "blockType",
-            "default": "do",
-            "values": ["do", "don't", "caution"],
+            "default": "Do",
+            "values": ["Do", "Don't", "Caution"],
             "type": "enum",
             "label": "Type"
           },

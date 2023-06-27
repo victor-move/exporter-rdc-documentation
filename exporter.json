@@ -811,7 +811,8 @@
         "category": "Component Blocks",
         "title": "Do/Don't Top",
         "description": "For use with Do/Don't block components that have Use Seperate Top enabled",
-        "mode": "block"
+        "mode": "block",
+        "properties": []
       },
       {
         "key": "io.rdc.documentation-main.questions-section",

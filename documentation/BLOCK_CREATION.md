@@ -129,4 +129,4 @@ The first step should be declaring the block in `exporter.json`. This can be com
 
 From this point, the custom block can be developed in a new branch using the [Supernova VSCode extension](https://marketplace.visualstudio.com/items?itemName=SupernovaIO.pulsar-vsc-extension). Once your account is logged in and your workspace is set to haven, a local build can be made by pressing the "run exporter" button (alternatively found in the command palette). For CSS changes, `npm run build` will need to be ran before the local build. 
 
-Once the block's HTML and CSS has been created, a PR can be made and should be reviewed by the Web Platform team.
+Once the block's HTML and CSS has been created, a PR can be made and should be reviewed by the Web Platform team. Note that as this repo is a fork of Supernova's make sure the PR is set to target the master of `victor-move/exporter-rdc-documentation`.

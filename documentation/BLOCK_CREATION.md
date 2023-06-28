@@ -121,12 +121,12 @@ The Pulsar language documentation isn't fully complete, but what exists should b
 
 ## Handling CSS
 
-In the latest versions of the exporter, CSS for custom blocks is contained in their own file within `scss/blocks`. The file will need to be imported into `scss/main.scss` e.x.: `@import './blocks/questions-section';`.
+In the latest versions of the exporter, CSS for custom blocks is contained in their own file within `scss/blocks`. The file will need to be imported into `scss/main.scss` e.g.: `@import './blocks/questions-section';`.
 
 ## Workflow
 
-The first step should be declaring the block in `exporter.json`. This can be commited directly in `master`. From that point, the `exporter.json` changes should be pulled in on Supernova and hard refresh. Create the block in the [_custom blocks page](https://haven.preview.supernova-docs.io/latest/resources/custom-blocks-vv1BNHL1) and hit publish.
+The first step should be declaring the block in `exporter.json`. This can be done in a separate PR before any of the other work begins. Once approved and merged, the `exporter.json` changes should be pulled in on Supernova and hard refresh. Create the block in the [_custom blocks page](https://cloud.supernova.io/ws/haven/ds/10812-haven-design-systems/latest/documentation/editor/958195) and hit publish.
 
-From this point, the custom block can be developed in a new branch using the [Supernova VSCode extension](https://marketplace.visualstudio.com/items?itemName=SupernovaIO.pulsar-vsc-extension). Once your account is logged in and your workspace is set to haven, a local build can be made by pressing the "run exporter" button (alternatively found in the command palette). For CSS changes, `npm run build` will need to be ran before the local build. 
+From this point, the custom block can be developed in a new branch using the [Supernova VSCode extension](https://marketplace.visualstudio.com/items?itemName=SupernovaIO.pulsar-vsc-extension). An API key is also required, and instructions for this can be found on the extension page. Once your account is logged in and your workspace is set to haven, a local build can be made by pressing the "run exporter" button (alternatively found in the command palette). For CSS changes, `npm run build` will need to be ran before the local build. 
 
 Once the block's HTML and CSS has been created, a PR can be made and should be reviewed by the Web Platform team. Note that as this repo is a fork of Supernova's make sure the PR is set to target the master of `victor-move/exporter-rdc-documentation`.

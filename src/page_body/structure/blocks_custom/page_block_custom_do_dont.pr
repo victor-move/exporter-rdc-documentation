@@ -1,0 +1,29 @@
+{[ const block = context /]}
+{[ let type = block.properties.blockType /]}
+{[ let classType = block.properties.blockType /]}
+{[ if (type === "Don't")]}
+    {[ classType = "Dont" /]}
+{[/]}
+{[ let description = block.properties.description /]}
+{[ let configuration = exportConfiguration() /]}
+
+<div class="do-dont-block">
+    {[ if (block.properties.image)]}
+        <img class="block-image-content" src="{{ block.properties.image.asset.url }}"  />
+    {[/]}
+    <div class="block-caption {{ classType }}">
+        <div class="icon">
+        {[ if (type === "Do")]}
+            {[ inject "icon_rdc_circle_check" context configuration /]}
+        {[ elseif (type === "Don't")]}
+            {[ inject "icon_rdc_error" context configuration /]}
+        {[ elseif (type === "Caution")]}
+            {[ inject "icon_rdc_warning_color_filled" context configuration /]}
+        {[/]}
+        </div>
+        <span class="info">
+            <h3>{{ type }}</h3>
+            <p>{{ description }}</p>
+        </span>
+    </div>
+</div>

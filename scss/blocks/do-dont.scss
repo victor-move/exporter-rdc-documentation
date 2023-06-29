@@ -1,0 +1,62 @@
+/* =================================== */
+/*  Do/Don't block
+/* =================================== */
+.do-dont-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    .block-image-content {
+        width: 100%;
+        border-radius: 24px 24px 0 0;
+        border: 1px solid #CACACA;
+        border-bottom: none;
+    }
+    .block-caption {
+        display: flex;
+        width: 100%;
+        margin: 0;  
+        padding: 20px 16px ;
+        border-radius: 0 0 24px 24px;
+        .icon {
+            svg {
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                font-size: 24px; 
+            }
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 16px;
+            h3 {
+                margin-bottom: 8px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 16px;  
+            }
+        }
+    }
+    .Do {
+        background-color: #E7F5E9;
+        border-top: 4px solid #0A801F;
+        path {
+            fill: #0A801F;
+        }
+    }
+    .Dont {
+        background-color: #FBE9EA;
+        border-top: 4px solid #B81D22;
+        svg {
+            fill: #B81D22;
+        }
+    }
+    .Caution {
+        background-color: #FEF8EA;
+        border-top: 4px solid #F4B630;
+    }
+}
